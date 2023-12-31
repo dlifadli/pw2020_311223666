@@ -28,8 +28,8 @@ $mahasiswa = query('SELECT * FROM mahasiswa');
     foreach ($mahasiswa as $m) : ?>
       <tr>
         <td><?= $i++; ?></td>
-        <td><img src="img/<?= $m["gambar"]; ?>" width="60"></td>
-        <td><?= $m["nrp"]; ?></td>
+        <td><img src="img/<?= $m['gambar']; ?>" width="60"></td>
+        <td><?= $m['nrp']; ?></td>
         <td><?= $m['nama']; ?></td>
         <td><?= $m['email']; ?></td>
         <td><?= $m['jurusan']; ?></td>

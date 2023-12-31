@@ -1,6 +1,6 @@
 <?php
 // koneksi ke DB & Pilih Database
-$conn = mysqli_connect('localhost', 'root', '', 'phpdasar');
+$conn = mysqli_connect('localhost', 'root', '', 'pw20_311223666');
 
 // query isi table
 $result = mysqli_query($conn, 'SELECT * FROM mahasiswa');

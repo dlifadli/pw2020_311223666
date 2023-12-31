@@ -1,7 +1,7 @@
 <?php
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'phpdasar');
+  return mysqli_connect("localhost", "root", "", "pw20_311223666");
 }
 
 function query($query)
@@ -10,7 +10,8 @@ function query($query)
 
   $result = mysqli_query($conn, $query);
 
-  if (mysqli_fetch_assoc($result) == 1) {
+  // jika hasilnya hanya 1 data
+  if (mysqli_num_rows($result) == 1) {
     return mysqli_fetch_assoc($result);
   }
 
