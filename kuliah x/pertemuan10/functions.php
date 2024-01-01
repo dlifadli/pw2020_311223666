@@ -7,7 +7,6 @@ function koneksi()
 function query($query)
 {
   $conn = koneksi();
-
   $result = mysqli_query($conn, $query);
 
   // jika hasilnya hanya 1 data
