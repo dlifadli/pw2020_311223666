@@ -33,7 +33,7 @@ if (isset($_POST["tambah"])) {
       <li><label>Gambar :<input type="text" name="gambar" required></label></li>
       <li><button type="submit" name="tambah">Tambah Data!</button></li>
     </ul>
-    <a href="latihan4.php">Kembali ke Daftar Mahasiswa</a>
+    <a href="latihan3.php">Kembali ke Daftar Mahasiswa</a>
   </form>
 </body>
 
