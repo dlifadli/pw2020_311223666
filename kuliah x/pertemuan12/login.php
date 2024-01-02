@@ -32,6 +32,7 @@ if (isset($_POST['login'])) {
       <li><label>Username :<input type="text" name="username" autofocus autocomplete="off" required></label></li>
       <li><label>Password :<input type="password" name="password" required></label></li>
       <li><button type="submit" name="login">Login</button></li>
+      <li><a href="registrasi.php">Tambah User Baru</a></li>
     </ul>
   </form>
 </body>
