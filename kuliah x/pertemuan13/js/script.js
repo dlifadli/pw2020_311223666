@@ -11,19 +11,19 @@ keyword.addEventListener('keyup', function () {
   // ajax
 
   // XMLHttpRequest()
-  // const xhr = new XMLHttpRequest();
-  // xhr.onreadystatechange = function () {
-  //   if (xhr.readyState == 4 && xhr.status == 200) {
-  //     container.innerHTML = xhr.responseText;
-  //   }
-  // };
-  // xhr.open('get', 'ajax/ajax_cari.php?keyword=' + keyword.value);
-  // xhr.send();
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      container.innerHTML = xhr.responseText;
+    }
+  };
+  xhr.open('get', 'ajax/ajax_cari.php?keyword=' + keyword.value, true);
+  xhr.send();
 
   // fetch()
-  fetch('ajax/ajax_cari.php?keyword=' + keyword.value)
-    .then((response) => response.test())
-    .then((response) => (container.innerHTML = response));
+  // fetch('ajax/ajax_cari.php?keyword=' + keyword.value)
+  //   .then((response) => response.test())
+  //   .then((response) => (container.innerHTML = response));
 });
 
 // preview image untuk Tambah dan Ubah
